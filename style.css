@@ -20,6 +20,7 @@ body {
         background-position: center top;
         background-repeat: no-repeat;
         background-color: #080B2A;
+        background-size: cover;
     }
 }
 /*now giving the table a style to make it looks like a panel */
