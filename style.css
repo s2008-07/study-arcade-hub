@@ -8,4 +8,26 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #080B2A;
+}
+/* for mobile background */
+/* Mobile background */
+
+@media (max-width: 768px) {
+    body {
+        background-image: url("images/mobile_background.png");
+        background-size: contain;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-color: #080B2A;
+    }
+/*now giving the table a style to make it looks like a panel */
+.panel{
+    border-collapse: separate;
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+    border-color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
