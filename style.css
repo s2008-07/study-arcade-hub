@@ -21,6 +21,7 @@ body {
         background-repeat: no-repeat;
         background-color: #080B2A;
     }
+}
 /*now giving the table a style to make it looks like a panel */
 .panel{
     border-collapse: separate;
