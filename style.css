@@ -23,6 +23,13 @@ body {
         background-color: #080B2A;
         background-size: cover;
     }
+    .header {
+    flex-direction: column;
+    align-items: center;
+    }
+    .middel_icon {
+    margin: 24px 0;
+    }
 }
 /* now making the overview stylish and also very good and also it is in the left cornor  */
 .header{
@@ -37,6 +44,7 @@ body {
     border-style: solid;
     margin-left: 0%;
     width: 300px;
+    margin-bottom: auto;
 }
 /* this is for making the creatorsd in the right cornor ok !!!! */
 .created{
@@ -48,12 +56,39 @@ body {
     width: 300px;
     border-width: 1px;
 }
-/* 
+.middel_icon::before {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border: 3px solid transparent;
+    border-top-color: #a855f7;
+    border-right-color: #38bdf8;
+    border-radius: 50%;
+    box-sizing: border-box;
+    z-index: 0;
+    animation: rotate-ring 3s linear infinite;
+}
 .middel_icon{
-    width: 50px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    image-resolution: 20px;
-} */
+    position: relative;
+    width: 150px;
+    height: 150px;
+    font-size: 100px;
+    color: #38bdf8;
+    font-weight: bold;
+    text-shadow: 0 0 5px #38bdf8,
+                 0 0 15px #38bdf8,
+                 0 0 30px #a855f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* now makinng the best animation here:-  */
+@keyframes rotate-ring {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
